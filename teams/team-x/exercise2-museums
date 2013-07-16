@@ -1,0 +1,21 @@
+discussed singular vs multiple results for pages
+individual high level domains will use ID's as uri
+plural will have appended uri's for subdomains and/or parameters
+
+also -- how long should the rest url get and when should we start using parameters?
+
+such as
+
+
+/exhbit/id/
+/exhibits/current/
+/exhibits/<historical string>/
+the following would be paramaterized
+/exhibits/<historical string>/date
+/exhibits/<historical string>/location
+
+/location/id/
+/locations/
+
+/artist/id/
+/artists/
