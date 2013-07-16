@@ -1,0 +1,4 @@
+git clone https://github.com/<yourname>/uberconf-2013-rest-workshop.git
+cd <yourrepo>
+git remote add upstream https://github.com/bsletten/uberconf-2013-rest-workshop.git
+git pull upstream
