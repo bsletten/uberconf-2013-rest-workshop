@@ -39,10 +39,14 @@ exhibit
 	http://<museum>.com/exhibit/kingtut/2013
 	http://<museum>.com/exhibit/kingtut/2013/layout
 	http://<museum>.com/exhibit/kingtut/2013/cost
+	http://<museum>.com/exhibit/kingtut/2013/tours  [Type of tour is determined by media-type header]
 	http://<museum>.com/exhibit/kingtut/2013/video
 	http://<museum>.com/exhibit/kingtut/2013/photos
 	http://<museum>.com/exhibit/kingtut/2013/curator
 
+	## show the tours available provides links to the /exhibit/kingtut/<year>/tours 
+	http://<museum>.com/tours 
+	
 	## Get the list of exhibits in 2013
 	http://<museum>.com/exhibits/2013
 
