@@ -1,52 +1,63 @@
 Package Delivery Service
 
+--- Roles ---
+Customer
+Manager
+Employee
+Admin
+Internal = (Manager, Employee, Admin)
+
+
 Distribution Center - Facility Description, Docks, belts
 ========================================================
-dmbrshipping/distributioncenter
-dmbrshipping/distributioncenter/<id>/?<dock/other internal things>
-dmbrshipping/distributioncdnter/<id>/zipcodes
-dmbrshipping/distributioncenter/country/<state,province>
-dmbrshipping/distriburioncenter/region/<name>
+Customer - GET/Manager - GET/Employee - GET/Admin- GET,PUT,POST: dmbrshipping/distributioncenter
+Customer - GET/Manager - GET/Employee - GET/Admin - GET,PUT,POST,DELETE: dmbrshipping/distributioncenter/<id>/
+no Customer: dmbrshipping/distributioncenter/<id>/<dock/other internal things>
+Everybody - GET: dmbrshipping/distributioncenter/<id>/zipcodes
+Everybody - GET: dmbrshipping/distributioncenter/country/<state,province>
+Everybody - GET: dmbrshipping/distriburioncenter/region/<name>
 
 Routes
 =====
-dmbrshipping/routes
-dmbrshipping/routes/?source/?sink -- service
+Manager/Employee/Admin: dmbrshipping/routes
+dmbrshipping/routes;source='';sink='' -- service
 
 Tracking - exceptions, lost, destroyed/damaged, history
 =======================================================
-dmbrshipping/track/<id>
+System - POST: dmbrshipping/track
+Everybody - GET: dmbrshipping/track/<id>
 
 Contracted Package Delivery Services
 ====================================
-dmbrshipping/contractor
+Manager - GET/Admin - GET,PUT,POST: dmbrshipping/contractor
+Manager - GET/Admin - GET,PUT,POST,DELETE: dmbrshipping/contractor/<id>
 
 Customers - Shipper, Receiver
 =============================
-dmbrshipping/customer
-dmbrshipping/customer/<id>
-dmbrshipping/customer/track/
+Customer - POST/Internal - GET,POST: dmbrshipping/customer
+Customer - GET,PUT,PATCH,DELETE if self/Internal - GET,PUT,PATCH,DELETE: dmbrshipping/customer/<id>
+Everybody - GET/: dmbrshipping/customer/<id>/track/
 
 Package Types
 =============
-dmbrshipping/package/
+Everybody - GET/Admin - POST: dmbrshipping/package/
 dmbrshipping/package/<type>
 
 Service Types
 =============
-dmbrshipping/service
+Everybody: dmbrshipping/service
 dmbrshipping/service/<type>
 
 Trucks/Planes/Ships/Trains
 ==========================
-dmbrshipping/fleet
+Employee/Manager/Admin: dmbrshipping/fleet
 dmbrshipping/fleet/<id>
 dmbrshipping/fleet/<id>/maintenance
 dmbrshipping/fleet/type
 
 Employees - Drivers/Support Center/Dist Center Workers
 ======================================================
-dmbrshipping/employee
+Employee/Manager/Admin: dmbrshipping/employee
 dmbrshipping/employee/<id>
 dmbrshipping/employee/type
 
