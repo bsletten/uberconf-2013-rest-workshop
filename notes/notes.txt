@@ -32,3 +32,62 @@ Richardson Maturity Model
 
 Most "REST" API's are at level 2.  If you put "v1" or "v2" in an endpoint is a good indication that your API is at
 level 2.
+
+-----
+Backing into URL problems
+
+http://example.com/employee/bsletten
+http://example.com/employee/status
+
+Think of the URLs as vectors in information spaces.
+
+http://example.com/employee/id/bsletten
+http://example.com/employee/status/full-time
+
+-----
+
+Matrix URI
+
+scheme:/authority/hierarchical/.....
+
+http://example.com/menu?type=veg
+http://example.com/menu?type=gf
+http://example.com/menu?type=meat
+
+http://example.com/menu;lat=2342;lon=3423
+
+GET http://example.com/menu;type=gf;color=orange;lat=;lon=
+
+[Representation]
+
+http://example.com/menu/id/big-mac
+http://example.com/menu/id/garlic-fries
+http://example.com/menu/id/frozen-pickles
+http://example.com/menu/id/1234238
+
+---- 
+
+Memorable
+
+http://example.com/time/timezone/PDT
+http://example.com/time/timezone/EDT
+
+----
+
+PATCHing resources:
+
+> "email" : "brian@foo.com"
+< "email" : "brian@bar.com"
+
+
+<xml>
+  <!-- Not has canonical form -->
+</xml>
+
+http://tools.ietf.org/html/rfc5261
+(also a JSON Patch format)
+
+
+
+
+
