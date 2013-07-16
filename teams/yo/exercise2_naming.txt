@@ -1,0 +1,22 @@
+Exercises
+
+Design an information space for:
+- A county library system
+
+- Fast food restaurant
+  Things to address
+	- Location
+		http://badfood4u.com/stores/usa/co/12345
+    /stores?state=co&zipcode=12345
+	- menu
+    http://badfood4u.com/menu/burgers/mcdummy
+	- hours of operation
+    http://badfoods4u.com/stores/usa/co/12345/hours
+  - Search
+    http://badfood4u.com/search?item=burger  
+	- specials/deals
+    http://badfood4u.com/specials/daily
+- A package delivery service
+- A musuem
+- A radio station
+- A micro-blogging site
