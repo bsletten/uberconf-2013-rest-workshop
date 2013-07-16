@@ -1,0 +1,7 @@
+http://pds.com/packages/{trackingId}
+http://pds.com/packages/sender/{date}
+
+http://pds.com/location/
+http://pds.com/location/{country}/{state}/{city}/{street}/
+
+
