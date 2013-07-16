@@ -1,0 +1,52 @@
+Package Delivery Service
+
+Distribution Center - Facility Description, Docks, belts
+========================================================
+dmbrshipping/distributioncenter
+dmbrshipping/distributioncenter/<id>/?<dock/other internal things>
+dmbrshipping/distributioncdnter/<id>/zipcodes
+dmbrshipping/distributioncenter/country/<state,province>
+dmbrshipping/distriburioncenter/region/<name>
+
+Routes
+=====
+dmbrshipping/routes
+dmbrshipping/routes/?source/?sink -- service
+
+Tracking - exceptions, lost, destroyed/damaged, history
+=======================================================
+dmbrshipping/track/<id>
+
+Contracted Package Delivery Services
+====================================
+dmbrshipping/contractor
+
+Customers - Shipper, Receiver
+=============================
+dmbrshipping/customer
+dmbrshipping/customer/<id>
+dmbrshipping/customer/track/
+
+Package Types
+=============
+dmbrshipping/package/
+dmbrshipping/package/<type>
+
+Service Types
+=============
+dmbrshipping/service
+dmbrshipping/service/<type>
+
+Trucks/Planes/Ships/Trains
+==========================
+dmbrshipping/fleet
+dmbrshipping/fleet/<id>
+dmbrshipping/fleet/<id>/maintenance
+dmbrshipping/fleet/type
+
+Employees - Drivers/Support Center/Dist Center Workers
+======================================================
+dmbrshipping/employee
+dmbrshipping/employee/<id>
+dmbrshipping/employee/type
+
