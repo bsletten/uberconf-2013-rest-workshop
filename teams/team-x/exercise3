@@ -1,0 +1,12 @@
+roles --- resources
+patron - public level read only
+	shopping cart - full
+
+
+low level staff role - update certain objects
+			view cust cart
+
+high level staff  -- up all objects
+		     modify user shop carts
+
+
