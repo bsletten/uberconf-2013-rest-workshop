@@ -1,3 +1,27 @@
+RMM Level 1 introduces "identifiers", but they can be completely unconstrained.
+
+http://example.com/account/deposit?value=500
+
+RMM Level 2 (HTTP constraints) will shape how those are actually used.
+
+Many REST APIs require you to read their API layout in order to have your code know how to invoke it:
+
+http://flickr.com/api/foo/baz/bat/term=dog
+
+but this will break things if your code learns the old way and then they change it:
+
+http://flickr.com/api/foo/bat/baz/term=dog
+
+Clients should "learn things" from the representations. They will be less tightly-coupled then.
+
+Stable identifiers will draw attention. Here is the example of the "index based upon image properties link":
+
+http://labs.systemone.at/retrievr
+
+That works because Flickr uses stable identifiers. Otherwise, it wouldn't be in the Retrievr folks' interest to build something that depends upon another system.
+
+We want to build Resource-Oriented Architectures that are stable so people will find value in what we produce beyond our initial usage.
+=======
 This is a note ...
 
 Richardson Maturity Model

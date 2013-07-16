@@ -1,0 +1,71 @@
+NOUNS: 
+
+Artifacts
+exhibits
+museum
+curators
+donars
+owners
+sponsors
+artists
+authors
+members
+employees
+visitors
+tours
+pamphlets  - publications
+schedules
+
+Use Cases: 
+	* I want to know what is at a museum
+	* What are the hours and where it is located
+	* Cost
+	* Information ont he current exhibit, - history, author, creator, origns
+	* What exhibts are going to be coming 
+
+
+URLS: 
+Hours, location, fees etc.
+
+	http://<museum>.com/general-info
+	http://<museum>.com/general-info/location
+	http://<museum>.com/general-info/hours
+
+exhibit
+	http://<museum>.com/exhibits
+	http://<museum>.com/exhibit/<exhibit-name>
+	http://<museum>.com/exhibit/kingtut -> /exhibit/kingtut/2013
+	
+	http://<museum>.com/exhibit/kingtut/2013
+	http://<museum>.com/exhibit/kingtut/2013/layout
+	http://<museum>.com/exhibit/kingtut/2013/cost
+	http://<museum>.com/exhibit/kingtut/2013/tours  [Type of tour is determined by media-type header]
+	http://<museum>.com/exhibit/kingtut/2013/video
+	http://<museum>.com/exhibit/kingtut/2013/photos
+	http://<museum>.com/exhibit/kingtut/2013/curator
+
+	## show the tours available provides links to the /exhibit/kingtut/<year>/tours 
+	http://<museum>.com/tours 
+	
+	## Get the list of exhibits in 2013
+	http://<museum>.com/exhibits/2013
+
+	
+Donors
+
+	http://<museum>.com/donors
+	http://<museum>.com/donor/Matt.pope/bio
+	http://<museum>.com/curators
+	http://<museum>.com/curator/nathan.wolaski/bio
+
+
+
+
+
+
+
+
+
+
+
+http://denv
